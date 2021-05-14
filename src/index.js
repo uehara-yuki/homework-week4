@@ -8,7 +8,7 @@ import CurrentWeather from "./CurrentWeather";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
-import "./styles.css";
+import "./Styles.css";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
