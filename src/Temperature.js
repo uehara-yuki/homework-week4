@@ -7,11 +7,11 @@ export default function Temperature() {
     <div className="temperature">
       <div>
         <span id="temperature"> 19 </span>
-        <a href="#" id="celsius" className="active">
+        <a href="/" id="celsius" className="active">
           °C
         </a>
         |
-        <a href="#" id="fahrenheit">
+        <a href="/" id="fahrenheit">
           °F
         </a>
       </div>
