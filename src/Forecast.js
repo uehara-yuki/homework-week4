@@ -9,9 +9,9 @@ export default function Forecast() {
         <strong> 1°C </strong>/ -1°C
         <img
           alt="weatherIcon"
-          className="w-100"
+          className="forecast w-100"
           src="http://openweathermap.org/img/wn/01d@2x.png"
-          className="forecast"
+          
         />
       </div>
 
@@ -20,9 +20,9 @@ export default function Forecast() {
         <strong> 1°C </strong>/ -2°C
         <img
           alt="weatherIcon"
-          className="w-100"
+          className="forecast w-100"
           src="http://openweathermap.org/img/wn/01d@2x.png"
-          className="forecast"
+          
         />
       </div>
 
@@ -33,7 +33,7 @@ export default function Forecast() {
           alt="weatherIcon"
           className="w-100"
           src="http://openweathermap.org/img/wn/01d@2x.png"
-          className="forecast"
+          
         />
       </div>
       <div className="col">
@@ -41,9 +41,9 @@ export default function Forecast() {
         <strong> 1°C </strong>/ -4°C
         <img
           alt="weatherIcon"
-          className="w-100"
+          className="forecast w-100"
           src="http://openweathermap.org/img/wn/01d@2x.png"
-          className="forecast"
+          
         />
       </div>
       <div className="col">
@@ -51,9 +51,9 @@ export default function Forecast() {
         <strong> 1°C </strong>/ -5°C
         <img
           alt="weatherIcon"
-          className="w-100"
+          className="forecast w-100"
           src="http://openweathermap.org/img/wn/01d@2x.png"
-          className="forecast"
+          
         />
       </div>
     </div>
