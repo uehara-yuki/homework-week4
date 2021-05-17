@@ -8,7 +8,7 @@ export default function CurrentWeather() {
   const [weatherData, setWeatherData]= useState ({ready: false});
   
   function handleResponse(response){
-    console.log(response.data)
+    console.log(response.data);
     setWeatherData ({
       ready:true,
       description: response.data.weather[0].description,
@@ -36,14 +36,14 @@ if (weatherData.ready) {
       <div className="col-6">
         <div className="weatherDescription" id="weather-description">
           {" "}
-          {weatherData.description}Clear Sky{" "}
+          {weatherData.description}{" "}
         </div>
         <div className="humidity" id="humidity">
-          {weatherData.humidity}Humidity: 5%
+          Humidity: {weatherData.humidity} %
         </div>
         <div className="wind" id="wind">
           {" "}
-          Wind: 5 km/h{" "}
+          Wind: {Math.round(weatherData.wind)} km/h{" "}
         </div>
       </div>
     </div>
@@ -51,8 +51,9 @@ if (weatherData.ready) {
 } else {
   
 const apiKey="c25c2e288aa866c69cd6db4b9732a68a";
+let city = "New York";
 let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-let city= "New York";
+
 axios.get(apiUrl).then(handleResponse);
 }
 return (
